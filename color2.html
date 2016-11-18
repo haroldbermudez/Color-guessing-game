@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Color guessing game</title>
+    <style>
+        h1 {
+            text-align: center;
+            font-size:45px;
+        }
+        body {
+            background: url("2361621.jpg");
+            background-size: 1900px 2000px;
+            background-repeat: no-repeat;
+            padding-top: 19px;
+            padding-top: 15px;
+        }
+        h2 {
+            text-align: center;
+            font-size: 35px;
+        }
+        b2 {
+            text-align: center;
+            font-size: 30px;
+        }
+        select {
+            font-size: inherit;
+        }
+
+
+    </style>
+
+</head>
+<body onload="pickComputerColor()">
+
+<h1>Color guessing game</h1>
+
+<form method="get">
+    <b2><div>Select your favorite colors:</b2>
+    <br>
+    <br>
+        <select id="mySelect">
+            <br>
+            <br>
+            <option>Coral</option>
+            <option>Dark Gray</option>
+            <option>GhostWhite</option>
+            <option>Indian Red</option>
+            <option>Lavender</option>
+            <option>MediumPurple</option>
+            <option>Olive</option>
+            <option>Teal</option>
+            <option>YellowGreen</option>
+        </select>
+    <h3><input type="button" onclick="getIndex()"
+           value="Submit"></div></h3>
+
+
+
+</form>
+
+
+<p id="demo"></p>
+<script src="color.js"></script>
+</body>
+</html>
